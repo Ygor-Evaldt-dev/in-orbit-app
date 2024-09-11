@@ -10,7 +10,7 @@ export function week() {
 	return dayjs().week();
 }
 
-export function startOfWeek() {
+export function startDayOfWeek() {
 	return dayjs().startOf("week");
 }
 

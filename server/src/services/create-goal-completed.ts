@@ -1,5 +1,5 @@
 import { and, count, eq, gte, lte, sql } from "drizzle-orm";
-import { lastDayOfWeek, startOfWeek } from "../adapters/dayjs-adapter";
+import { lastDayOfWeek, startDayOfWeek } from "../adapters/dayjs-adapter";
 import { db } from "../db";
 import { goal, goalCompleted } from "../db/schema";
 import { CreateGoalCompletedDto } from "./dtos/create.goal.completed-dto";
@@ -16,7 +16,7 @@ export async function createGoalCompleted({
 			.from(goalCompleted)
 			.where(
 				and(
-					gte(goalCompleted.createdAt, startOfWeek().toDate()), //greater than equal
+					gte(goalCompleted.createdAt, startDayOfWeek().toDate()), //greater than equal
 					lte(goalCompleted.createdAt, lastDayOfWeek().toDate()), //lower than equal
 					eq(goalCompleted.goalId, goalId) // equals
 				)
