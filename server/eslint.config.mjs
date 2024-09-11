@@ -8,7 +8,7 @@ export default [
 		rules: {
 			semi: ["error", "always"],
 			quotes: ["error", "double"],
-			indent: ["error", "tab"]
+			indent: ["error", "space"]
 		}
 	},
 	...tseslint.configs.recommended
