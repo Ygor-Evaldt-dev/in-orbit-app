@@ -1,8 +1,10 @@
-# In.Orbit App
+# In.Orbit App 
+![Versão](https://img.shields.io/badge/vers%C3%A3o-v1.0.0-blue)
 
 ## 📖 Conteúdo
 - [Descrição](#descrição)
 - [Funcionalidades](#funcionalidades)
+- [Telas do app](#telas-do-app)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Estrutura do Repositório](#estrutura-do-repositorio)
 - [Instalação](#instalação)
@@ -18,6 +20,11 @@ O **In.Orbit App** é uma aplicação desenvolvida para te ajudar a definir e co
 - **Visualizar metas**: Visualize suas metas e em quais dias você as concluiu.
 - **Marque uma meta como concluída**: Click no nome da meta para concluí-la no dia atual.
 - **Acompanhe seu progresso**: Vizualise quantos por cento faltam para você completar todas as metas da semana.
+
+## Telas do app
+![Tela inicial da aplicação](./assets/start.png)</b>
+![Tela cadastrando nova meta](./assets/create-goal.png)</b>
+![Tela gerenciando metas](./assets/completed-goals.png)</b>
 
 ## Tecnologias Utilizadas
 
